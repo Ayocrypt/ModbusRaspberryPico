@@ -3,7 +3,11 @@
 ## Requirements
 
 - Raspberry Pi Pico
+- ![Pico Board](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RPI_pico.jpg)
+
 - TTL to RS485 Converters (one per switch network)
+- ![RS485 TTL](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RS485_ttll.jpg)
+  
 - Modbus Eight Switches and Eight Relay Channels
 - CAT6 Cable
 - 12V Power Supply
@@ -39,6 +43,7 @@
 - **Individual TTL to RS485 Converters**: 
   - Connect each switch network to its own converter.
   - Ensure proper RX, TX connections to Pico.
+  - ![Sample Connections](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/sample_connections.jpg)
 
 ## Power Supply
 
@@ -69,9 +74,8 @@
 
 ##
 
-- ![Pico Board](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RPI_pico.jpg)
-- ![RS485 TTL](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RS485_ttll.jpg)
-- ![Sample Connections](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/sample_connections.jpg)
+- 
+- 
 - [Working Single Network Video](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/working_single_network_video.mp4)
 
 This setup ensures efficient communication and power distribution.
