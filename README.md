@@ -7,8 +7,8 @@
 - IUTOP Eight Switches
 - CAT6 Cable
 - 12V Power Supply
-- 5V Power Supply (optional, based on capacity)
-- Resistors for Line Termination
+- 5V Power Supply (based on current capacity use seperate)
+- Resistors for Line Termination (not needed )
 
 ## Purpose
 
@@ -67,7 +67,7 @@
 
 - **Isolation**: Separate networks minimize interference and allow independent operation.
 
-## Media
+##
 
 - ![Pico Board](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RPI_pico.jpg)
 - ![RS485 TTL](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RS485_ttll.jpg)
