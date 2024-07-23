@@ -4,7 +4,7 @@
 
 - Raspberry Pi Pico
 - TTL to RS485 Converters (one per switch network)
-- IUTOP Eight Switches
+- Modbus Eight Switches and Eight Relay Channels
 - CAT6 Cable
 - 12V Power Supply
 - 5V Power Supply (based on current capacity use seperate)
