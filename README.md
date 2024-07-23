@@ -12,7 +12,7 @@
   
 - Modbus Eight Switches and Eight Relay Channels
 - CAT6 Cable
-- 12V Power Supply
+- 12V Power Supply ( Please Ensure sufficient Current for all)
 - 5V Power Supply (based on current capacity use seperate)
 - Resistors for Line Termination (not needed )
 
