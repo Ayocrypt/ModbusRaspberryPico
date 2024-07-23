@@ -1,4 +1,6 @@
-# RS485 Network Setup with Raspberry Pi Pico
+# ModbusRaspberryPico
+
+## RS485 Network Setup with Raspberry Pi Pico
 
 ## Requirements
 
