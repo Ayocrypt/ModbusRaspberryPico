@@ -1,7 +1,17 @@
-# ModbusRaspberryPico
-## RS485 Network Setup with Raspberry Pi Pico
+# RS485 Network Setup with Raspberry Pi Pico
+
+## Requirements
+
+- Raspberry Pi Pico
+- TTL to RS485 Converters (one per switch network)
+- IUTOP Eight Switches
+- CAT6 Cable
+- 12V Power Supply
+- 5V Power Supply (optional, based on capacity)
+- Resistors for Line Termination
 
 ## Purpose
+
 - **Separate TTL to RS485 Converters**: Each switch network requires its own converter for reliability and reduced interference.
 
 ## Configuration
@@ -57,5 +67,11 @@
 
 - **Isolation**: Separate networks minimize interference and allow independent operation.
 
-This setup ensures efficient communication and power distribution.
+## Media
 
+- ![Pico Board](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RPI_pico.jpg)
+- ![RS485 TTL](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RS485_ttll.jpg)
+- ![Sample Connections](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/sample_connections.jpg)
+- [Working Single Network Video](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/working_single_network_video.mp4)
+
+This setup ensures efficient communication and power distribution.
