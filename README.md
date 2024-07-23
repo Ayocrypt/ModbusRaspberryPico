@@ -74,10 +74,7 @@
 
 - **Isolation**: Separate networks minimize interference and allow independent operation.
 
-##
 
-- 
-- 
 - [Working Single Network Video](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/working_single_network_video.mp4)
 
 This setup ensures efficient communication and power distribution.
