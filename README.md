@@ -5,16 +5,14 @@
 ## Requirements
 
 - Raspberry Pi Pico
-- ![Pico Board](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RPI_pico.jpg)
-
+  - ![Pico Board](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RPI_pico.jpg)
 - TTL to RS485 Converters (one per switch network)
-- ![RS485 TTL](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RS485_ttll.jpg)
-  
+  - ![RS485 TTL](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/RS485_ttll.jpg)
 - Modbus Eight Switches and Eight Relay Channels
 - CAT6 Cable
-- 12V Power Supply ( Please Ensure sufficient Current for all)
-- 5V Power Supply (based on current capacity use seperate)
-- Resistors for Line Termination (not needed )
+- 12V Power Supply (Ensure sufficient current for all)
+- 5V Power Supply (use separate supplies based on capacity)
+- Resistors for Line Termination (not needed)
 
 ## Purpose
 
@@ -22,18 +20,70 @@
 
 ## Configuration
 
-### Relay Settings
-- **Slave Address**: `2` (labeled on relay, code uses `2`)
+### Network Details
 
-### Switch Settings
-- **Slave Address**: `8` (labeled on switch, code uses `1`)
+1. **Network 1:**
+   - **Switch Slave Address**: `129`
+     - Switch Panel: Turn on button 1 and button 8
+   - **Relay Slave Address**: `9`
+     - Relay Panel: Turn on button 1 and button 4
+   - **Python**: `(switch slave address = 129, relay slave address = 9)`
+
+2. **Network 2:**
+   - **Switch Slave Address**: `65`
+     - Switch Panel: Turn on button 2 and button 8
+   - **Relay Slave Address**: `6`
+     - Relay Panel: Turn on button 2 and button 3
+   - **Python**: `(switch slave address = 65, relay slave address = 6)`
+
+3. **Network 3:**
+   - **Switch Slave Address**: `33`
+     - Switch Panel: Turn on button 3 and button 8
+   - **Relay Slave Address**: `10`
+     - Relay Panel: Turn on button 2 and button 4
+   - **Python**: `(switch slave address = 33, relay slave address = 10)`
+
+4. **Network 4:**
+   - **Switch Slave Address**: `17`
+     - Switch Panel: Turn on button 4 and button 8
+   - **Relay Slave Address**: `18`
+     - Relay Panel: Turn on button 2 and button 5
+   - **Python**: `(switch slave address = 17, relay slave address = 18)`
+
+5. **Network 5:**
+   - **Switch Slave Address**: `9`
+     - Switch Panel: Turn on button 5 and button 8
+   - **Relay Slave Address**: `20`
+     - Relay Panel: Turn on button 3 and button 5
+   - **Python**: `(switch slave address = 9, relay slave address = 20)`
+
+6. **Network 6:**
+   - **Switch Slave Address**: `5`
+     - Switch Panel: Turn on button 6 and button 8
+   - **Relay Slave Address**: `34`
+     - Relay Panel: Turn on button 2 and button 6
+   - **Python**: `(switch slave address = 5, relay slave address = 34)`
+
+7. **Network 7:**
+   - **Switch Slave Address**: `3`
+     - Switch Panel: Turn on button 7 and button 8
+   - **Relay Slave Address**: `12`
+     - Relay Panel: Turn on button 3 and button 4
+   - **Python**: `(switch slave address = 3, relay slave address = 12)`
+
+8. **Network 8:**
+   - **Switch Slave Address**: `4`
+     - Switch Panel: Turn on button 6 only
+   - **Relay Slave Address**: `48`
+     - Relay Panel: Turn on button 5 and button 6
+   - **Python**: `(switch slave address = 4, relay slave address = 48)`
 
 ## Connection Diagram
 
 ### Wiring with CAT6
 
 #### RS485 Data Lines
-- **Each Network**: Use a separate twisted pair for A and B lines.
+- **Shared Network**: Use a single twisted pair for A and B lines.
 
 #### Power Lines
 - **12V Power**: Shared across all relays and switches.
@@ -73,7 +123,6 @@
   - Ensure all grounds are common.
 
 - **Isolation**: Separate networks minimize interference and allow independent operation.
-
 
 - [Working Single Network Video](https://github.com/Ayocrypt/ModbusRaspberryPico/blob/main/working_single_network_video.mp4)
 
