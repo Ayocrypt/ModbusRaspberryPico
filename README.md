@@ -2,6 +2,18 @@
 
 ## RS485 Network Setup with Raspberry Pi Pico
 
+## Switch address tree
+```
+8- 1
+7- 2
+6- 4
+5-  8
+4-  16
+3 - 32
+2 - 64
+1 - 128
+```
+
 ## Requirements
 
 - Raspberry Pi Pico
@@ -25,9 +37,9 @@
 1. **Network 1:**
    - **Switch Slave Address**: `129`
      - Switch Panel: Turn on button 1 and button 8
-   - **Relay Slave Address**: `9`
-     - Relay Panel: Turn on button 1 and button 4
-   - **Python**: `(switch slave address = 129, relay slave address = 9)`
+   - **Relay Slave Address**: `1`
+     - Relay Panel: Turn on button 1 
+   - **Python**: `(switch slave address = 129, relay slave address = 1)`
 
 2. **Network 2:**
    - **Switch Slave Address**: `65`
